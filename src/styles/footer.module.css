@@ -1,0 +1,55 @@
+.footerContainer{
+    height: 30rem;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 0.5rem;
+}
+
+h2{
+    width: 250px;
+}
+
+h2 img{
+    width: 100%;
+}
+
+.footerWrapper{
+    min-width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+}
+
+.logoWrap{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.socialWrap{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.socialWrap button{
+    background-color: transparent;
+    font-size: 1.5rem;
+    width: 60px;
+    height: 60px;
+    padding: 1rem;
+    border-radius: 50%;
+    border-color: transparent;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.socialWrap button:hover{
+    transition: 0.3s;
+    border-color: black;
+}

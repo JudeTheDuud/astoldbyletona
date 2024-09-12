@@ -1,0 +1,179 @@
+.navContainer{
+    display: flex;
+    justify-content: center;
+    background-color: 	white;    
+    height: 5rem;
+    width: 100%;
+    align-items: center;
+    z-index: 9000;
+    
+}
+
+.navContent{
+    display: flex;
+    min-width: 80%;
+    height: 5rem;
+    justify-content: space-between;
+    vertical-align: middle;
+    align-items: center;
+    z-index: 9;
+    background-color: white;
+}
+
+.logo{
+ 
+    /* color: #FE828C; */
+    color: black;
+    width: 40px;
+}
+
+.logo img{
+    
+    width: 100%;
+    height: 10%;
+}
+
+.navlinks{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+    position: fixed;
+    background-color: beige;
+    z-index: 8;
+   text-align: right;
+}
+
+.navWrapper{
+    display: flex;
+   
+    position: fixed;
+    display: block;
+    width: 40%;
+    height: 100%;
+    /* background-color: #FE828C; */
+  
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+    transform: translateX(250%);
+    z-index: 9;
+}
+
+.navlinks li{
+    list-style: none;
+    width: 100%;
+}
+
+.navlinks li a {
+    text-decoration: none;
+    position: relative;
+    top: 7rem;
+    right: 2.5rem;
+    font-size: 4.5rem;
+    color: black;
+    font-weight: 800;
+    
+    text-align: left;
+}
+
+.navBtn{
+    display: block;
+    background-color: transparent;
+    border: none;
+    
+    padding: 1rem;
+    
+    width: 60px;
+    height: 60px;
+    font-size: 1.7rem;
+    cursor: pointer;
+    z-index: 10000;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+.navBtn:hover{
+    transition: 0.3s;
+    background-color: black;
+    color: white;
+}
+
+.navWrapper.responsive{
+    transition: 0.5s;
+    transform: translateX(150%);
+
+   }
+
+   .contactNum > a{
+    font-size: 1.8rem !important;
+    font-weight: 400 !important;
+   }
+   .contactMail > a{
+    font-size: 1.8rem !important;
+    font-weight: 400 !important;
+   }
+
+
+
+
+@media (max-width: 1024px) {
+    .navBtn{
+        display: block;
+        
+        
+        
+        
+
+    }
+
+    .navWrapper{
+        position: fixed;
+        display: block;
+        width: 100%;
+        height: 100%;
+        /* background-color: #FE828C; */
+      
+        top: 0;
+        left: 0;
+        transition: 0.5s;
+        transform: translateX(100%);
+        z-index: 9;
+    }
+
+    .navlinks{
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        text-align: center;
+        
+    }
+
+    .navlinks li a {
+        top: 0;
+        font-size: 3rem;
+        right: 0;
+    }
+   
+
+   .navWrapper.responsive{
+     transition: 0.5s;
+     transform: none;
+
+    }
+    
+
+    .navContent{
+        
+    }
+
+
+    
+   
+}
