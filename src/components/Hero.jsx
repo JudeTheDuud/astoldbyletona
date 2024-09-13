@@ -1,5 +1,6 @@
 import React from 'react'
 import styles from '../styles/hero.module.css'
+import { FaArrowDown } from 'react-icons/fa'
 
 const Hero = () => {
   return (
@@ -8,6 +9,7 @@ const Hero = () => {
         <h1>ELEVATING <br /> YOUR BRAND.</h1>
         <p>Shaping your vision.</p>
       </div>
+      <div className={styles.arrow}><FaArrowDown/></div>
     </div>
   )
 }

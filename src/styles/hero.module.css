@@ -37,3 +37,35 @@
     font-weight: 500;
   
 }
+
+.arrow{
+    font-size: 3rem;
+    position: absolute;
+    bottom: 30%;
+    right: 10.5%;
+    cursor: pointer;
+}
+
+
+@media (max-width:1024px) {
+    .heroWrapper h1{
+        font-size: 5rem;
+    }
+
+    .heroWrapper p{
+        font-size: 1.2rem;
+    }
+
+
+}
+
+@media (max-width:768px) {
+    .heroWrapper h1{
+        font-size: 3rem;
+    }
+
+    .arrow{
+        font-size: 2rem;
+        right: 12%;
+    }
+}

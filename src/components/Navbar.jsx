@@ -1,5 +1,5 @@
 import {useRef, useState} from 'react'
-import { FaBars, FaTimes } from 'react-icons/fa'
+import { FaBars, FaTimes     } from 'react-icons/fa'
 import styles from '../styles/navbar.module.css'
 import Logo from '../assets/pngs/Icon Black.png'
 const Navbar = () => {
