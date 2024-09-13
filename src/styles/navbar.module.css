@@ -1,9 +1,13 @@
+body::-webkit-scrollbar{
+    display: none;
+}
+
 .navContainer{
     display: flex;
     justify-content: center;
     background-color: 	white;    
     height: 5rem;
-    width: 100%;
+     width: 100%;
     align-items: center;
     z-index: 9000;
     
@@ -105,7 +109,7 @@
 .navWrapper.responsive{
     transition: 0.5s;
     transform: translateX(150%);
-
+    
    }
 
    .contactNum > a{

@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from '../styles/footer.module.css'
 import Logo from '../assets/pngs/Logo Black.png'
-import { FaXTwitter, FaFacebookF, FaInstagram } from 'react-icons/fa6'
+import { FaXTwitter, FaThreads, FaInstagram } from 'react-icons/fa6'
 
 const Footer = () => {
   return (
@@ -11,7 +11,7 @@ const Footer = () => {
                 <h2><img src={Logo} alt="" /></h2>
                 <div className={styles.socialWrap}>
                     <button><FaXTwitter/></button>
-                    <button><FaFacebookF/></button>
+                    <button><FaThreads/></button>
                     <button><FaInstagram/></button>
                 </div>
             </div>

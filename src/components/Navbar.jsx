@@ -9,6 +9,11 @@ const Navbar = () => {
     const showNavbar = () =>{
         navRef.current.classList.toggle(styles.responsive)
         setIsNavOpen(!isNavOpen);
+        if (!isNavOpen) {
+            document.body.style.overflow = 'hidden';
+        } else {
+            document.body.style.overflow = 'auto'; // Re-enable scroll
+        }
     }
     
 
