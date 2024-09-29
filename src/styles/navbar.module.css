@@ -11,26 +11,25 @@ body::-webkit-scrollbar {
   align-items: center;
 }
 
-
-
 .navContent {
   display: flex;
-  min-width: 80%;
+  min-width: 85%;
   height: 5rem;
   justify-content: space-between;
-  
+  border-radius: 1rem;
   align-items: center;
   background-color: white;
   position: fixed;
   top: 0;
   z-index: 1000;
-  /* box-shadow: 0px 7px 20px -20px rgb(166, 166, 166); */
+  box-shadow: 0px 7px 20px -20px rgb(166, 166, 166);
 }
 
 .logo {
   /* color: #FE828C; */
   color: black;
   width: 40px;
+  margin-left: 0.3rem;
 }
 
 .logo img {
@@ -96,9 +95,8 @@ body::-webkit-scrollbar {
   display: block;
   background-color: transparent;
   border: none;
-
   padding: 1rem;
-
+  color: black;
   width: 60px;
   height: 60px;
   font-size: 1.7rem;
@@ -106,12 +104,13 @@ body::-webkit-scrollbar {
   z-index: 10000;
   border-radius: 50%;
   transition: 0.3s;
+  margin-right: 0.3rem;
 }
 
 .navBtn:hover {
   transition: 0.3s;
   background-color: #ebc1ab;
-  color: white;
+  color: black;
 }
 
 .navWrapper.responsive {

@@ -44,16 +44,30 @@
     bottom: 30%;
     right: 10.5%;
     cursor: pointer;
+    animation: float 1.4s linear infinite;
 }
 
+@keyframes float{
+    0%,100% {
+        bottom: 10%;
+    }
+
+    50%{
+        bottom:100px;
+    }
+}
 
 @media (max-width:1024px) {
     .heroWrapper h1{
         font-size: 5rem;
+        text-align: center;
+        line-height: 3.9rem;
+        left: 0;
     }
 
     .heroWrapper p{
         font-size: 1.2rem;
+        text-align: center;
     }
 
 
@@ -61,7 +75,8 @@
 
 @media (max-width:768px) {
     .heroWrapper h1{
-        font-size: 3rem;
+        font-size: 3.2rem;
+        line-height: 2.5rem;
     }
 
     .arrow{

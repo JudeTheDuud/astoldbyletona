@@ -47,9 +47,22 @@ h2 img{
     border-color: transparent;
     cursor: pointer;
     transition: 0.3s;
+    color: black;
+}
+
+.socialWrap button a {
+    color: black;
 }
 
 .socialWrap button:hover{
     transition: 0.3s;
     border-color: black;
+}
+
+.phone{
+    display: flex;
+}
+
+.phone p{
+    margin-left: 0.4rem;
 }

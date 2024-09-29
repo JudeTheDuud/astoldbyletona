@@ -1,0 +1,92 @@
+.aboutContainer {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+
+.aboutWrapper {
+    display: flex;
+    width: 80%;
+    background-color: #ebc1ab;
+    height: 85%;
+    padding: 3rem;
+    border-radius: 1rem;
+    justify-content: space-between;
+  }
+}
+.aboutSection {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.who {
+  font-weight: 300;
+}
+
+.writeUp {
+  margin-top: 3rem;
+  font-size: clamp(1rem, 0.28rem + 3.337vw, 2.5rem);
+  text-align: left;
+  font-weight: 400;
+}
+
+.aboutBtn {
+  margin-top: 5rem;
+  padding: 1rem;
+  border-radius: 2rem;
+  background-color: transparent;
+  border: 1px solid black;
+  width: 20%;
+  cursor: pointer;
+  font-weight: 900;
+}
+
+.aboutBtn::after {
+  content: "";
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  margin-left: 0.4rem;
+  padding: 3px;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.aboutBtn:hover::after {
+  transition: 0.3s;
+  border: solid #b7bbac;
+  content: "";
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  margin-left: 0.4rem;
+  padding: 3px;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.aboutBtn:hover {
+  transition: 0.3s;
+  background-color: black;
+  color: #b7bbac;
+}
+
+.aboutImg {
+  width: 40%;
+}
+
+.aboutImg img {
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .aboutBtn {
+    width: 100%;
+  }
+}
+@media (max-width: 1024px) {
+  .aboutBtn {
+    width: 100%;
+    font-size: 0.7rem;
+  }
+}
