@@ -1,5 +1,5 @@
 .footerContainer{
-    height: 15rem;
+    height: 350px;
     width: 100%;
     
     bottom: 0;
@@ -61,8 +61,23 @@ h2 img{
 
 .phone{
     display: flex;
+    align-items: center;
 }
 
 .phone p{
     margin-left: 0.4rem;
+}
+
+@media(max-width: 768px){
+    h2{
+        width: 40%;
+    }
+
+    .socialWrap{
+        justify-content: center;
+    }
+
+    .logoWrap{
+        justify-content: center;
+    }
 }

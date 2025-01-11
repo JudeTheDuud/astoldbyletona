@@ -1,5 +1,7 @@
 import {useRef, useState} from 'react'
 import { FaBars, FaTimes     } from 'react-icons/fa'
+import { Link } from 'react-router-dom'
+import { Link as ScrollLink } from 'react-scroll'
 import styles from '../styles/navbar.module.css'
 import Logo from '../assets/pngs/Icon Black.png'
 const Navbar = () => {
@@ -21,12 +23,12 @@ const Navbar = () => {
     <div>
         <div className={styles.navContainer}>
             <div className={styles.navContent}>
-            <div className={styles.logo }><img src={Logo} alt="" /></div>
+            <Link to = '/' className={styles.logo }><img src={Logo} alt="" /></Link>
             <nav ref={navRef} className={styles.navWrapper}>
             <ul className={styles.navlinks}>
-                <li><a href="">SERVICES</a></li>
-                <li><a href="">ABOUT US</a></li>
-                <li ><a href="">PROJECTS</a></li>
+                <li><ScrollLink to = 'about' offset={-175}>ABOUT US</ScrollLink></li>
+                <li><ScrollLink to = 'wedo' offset={-90}>SERVICES</ScrollLink></li>
+                <li ><Link to = '/faq'>FAQS</Link></li>
                 <li  className={styles.contactNum}><a href="">+234 903 061 7124</a></li>
                 <li  className={styles.contactMail}><a href="mailto:info@astoldbyletona">info@astoldbyletona</a></li>
                 <li className={styles}>

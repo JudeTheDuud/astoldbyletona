@@ -1,18 +1,21 @@
-import Navbar from "./components/Navbar"
-import Footer from "./components/Footer"
-import Hero from "./components/Hero"
-import About from "./components/About"
-
+import Faq from "./components/Faq"
+import ScrollToTop from "./components/ScrollToTop"
+import LandingPage from "./pages/LandingPage"
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 function App() {
   
 
   return (
-    <div>
-      <Navbar/>
-      <Hero/>
-      <About/>
-      <Footer/>
+      <div className="App">
+        <Router>
+          <ScrollToTop/>
+          <Routes>
+            <Route path = '/' element = {<LandingPage/>}/>
+            <Route path = '/faq' element = {<Faq/>}/>
+          </Routes>
+        </Router>
       </div>
+      
   )
 }
 

@@ -6,15 +6,21 @@ body::-webkit-scrollbar {
   display: flex;
   justify-content: center;
   background-color: white;
-  height: 5rem;
+  height: 4rem;
   width: 100%;
   align-items: center;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  border-radius: 1rem;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
 }
 
 .navContent {
   display: flex;
   min-width: 85%;
-  height: 5rem;
+  height: 4rem;
   justify-content: space-between;
   border-radius: 1rem;
   align-items: center;
@@ -28,7 +34,7 @@ body::-webkit-scrollbar {
 .logo {
   /* color: #FE828C; */
   color: black;
-  width: 40px;
+  width: 35px;
   margin-left: 0.3rem;
 }
 
@@ -80,7 +86,7 @@ body::-webkit-scrollbar {
   font-size: 4.5rem;
   color: rgba(0, 0, 0, 0.6);
   font-weight: 800;
-
+cursor: pointer;
   text-align: left;
 }
 
@@ -127,6 +133,7 @@ body::-webkit-scrollbar {
   font-weight: 400 !important;
 }
 
+
 @media (max-width: 1024px) {
   .navBtn {
     display: block;
@@ -167,6 +174,25 @@ body::-webkit-scrollbar {
     transform: none;
   }
 
-  .navContent {
+}
+
+@media (max-width: 768px){
+  .navBtn{
+    font-size: 1.1rem;
+    padding: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+  }
+  .logo{
+    width: 30px;
+  }
+  .navContainer{
+    background-color: white;
+    height: 3rem;
+  }
+  .navContent{
+    width: 90%;
+    height: 3rem;
   }
 }

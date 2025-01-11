@@ -3,7 +3,7 @@ import Us from "../assets/svgs/enter.svg";
 import styles from "../styles/about.module.css";
 const About = () => {
   return (
-    <div className={styles.aboutContainer}>
+    <div id="about" className={styles.aboutContainer}>
       <div className={styles.aboutWrapper}>
         <div className={styles.aboutSection}>
           <div className={styles.who}>WHO ARE WE?</div>

@@ -1,0 +1,142 @@
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper {
+  width: 80%;
+  background-color: #909486;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1rem;
+  height: 100%;
+  padding: 2rem;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+.sectionA{
+    
+   display: flex;
+   flex-direction: column;
+   
+}
+.sectionA h3 {
+  color: white;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.sectionA p{
+    color: white;
+}
+
+.formWrap{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.form{
+    margin-block-start: 3rem;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr 1fr;
+    width: 80%;
+    background-color: white;
+    padding: 2rem;
+    border-radius: .5rem;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);   
+}
+
+.form > button{
+    height: 3rem;
+    width: 65%;
+    background-color: #ebc1ab;
+    justify-self: end;
+    grid-column: 2/3;
+    border-radius: inherit;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.form button:hover{
+    background-color: black;
+    color: #ebc1ab;
+
+}
+
+
+.formGroup{
+    width: 100%;
+    display: grid;
+    gap: .5rem;
+}
+
+.fullWidth{
+    grid-column: 1 / -1;
+    
+}
+
+.fullWidth textarea{
+    height: 9rem;
+    resize: none;
+    border: 1px solid rgb(211, 211, 211);
+    padding-left: .5rem;
+    padding-right: .5rem;
+    padding-top: .5rem;
+}
+
+
+
+.formGroup input {
+    height: 2.5rem;
+    border-radius: .2rem;
+    border: 1px solid rgb(211, 211, 211);
+    text-indent: 10px;
+}
+
+.formGroup input::placeholder{
+    color: rgb(124, 124, 124);
+}
+
+.error {
+    color: #fc8181;
+    font-size: 0.8rem;
+    visibility: hidden; 
+    height: 1rem; 
+  }
+  
+  .error.visible {
+    visibility: visible; 
+  }
+  
+
+
+@media (max-width: 768px) {
+  
+  .wrapper {
+    width: 100%;
+    align-items: center;
+    
+  }
+  
+  .form{
+    grid-template-columns: none;
+    height: 500px;
+    overflow-y: auto;
+    width: 100%;
+  }
+
+  .form button{
+    grid-column: 1;
+  }
+
+  .fullWidth{
+    grid-column: 1;
+  }
+}

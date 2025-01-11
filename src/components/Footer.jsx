@@ -17,7 +17,8 @@ const Footer = () => {
                     <button><a href="mailto:info@astoldbyletona"><AiOutlineMail/></a></button>
                 </div>
             </div>
-            <div className={styles.phone}> <FaPhone/>
+            <div className={styles.phone}>
+            <FaPhone/>
             <p>: +234 903 061 7124</p>
             </div>
             <div>Letona &copy; 2024, All Rights Reserved</div>

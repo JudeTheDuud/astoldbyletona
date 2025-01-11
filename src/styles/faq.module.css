@@ -1,0 +1,103 @@
+.container {
+  display: flex;
+  justify-content: center;
+  margin-block-start: 5rem;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.wrapper {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.sectionA {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.sectionA h1 {
+  font-weight: 300;
+  font-size: 2rem;
+}
+
+.accordion {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 3rem;
+}
+
+.item {
+  background-color: #ebc1ab;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 0.3rem;
+  padding: 1rem;
+}
+
+.question {
+  display: flex;
+  font-weight: 700;
+  text-align: left;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.question h2 {
+  font-size: 1rem;
+  width: 100%;
+}
+
+.clicky{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: black;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.answer {
+  font-size: 0.8rem;
+  text-align: justify;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.5s cubic-bezier(0, 1, 0, 1);
+}
+
+.answer.show {
+  height: auto;
+  max-height: 9999px;
+  transition: all 0.5s cubic-bezier(1, 0, 1, 0);
+}
+
+@media (min-width: 730px) {
+    .sectionA h1{
+        font-size: 3rem;
+    }
+
+    .item{
+        width: 60%;
+    }
+
+    .question h2 {
+        font-size: 1.3rem;
+        
+      }
+
+      .answer{
+        font-size: 1.1rem;
+      }
+      
+    
+}
