@@ -8,19 +8,21 @@ import Logo from "../assets/pngs/Icon Black.png";
 const Navbar = () => {
   const navRef = useRef();
   const [isNavOpen, setIsNavOpen] = useState(false);
+  const navWrap = document.getElementById(styles.navWrapper)
 
   const showNavbar = () => {
     setIsNavOpen(!isNavOpen);
     if (!isNavOpen) {
-      document.body.style.overflow = "hidden";
+        
+      navWrap.style.overflow = "hidden";
     } else {
-      document.body.style.overflow = "auto"; // Re-enable scroll
+      navWrap.style.overflow = "auto"; // Re-enable scroll
     }
   };
 
   const closeNavbar = () => {
     setIsNavOpen(false);
-    document.body.style.overflow = "auto"; // Ensure scrolling is re-enabled
+    navWrap.style.overflow = "auto"; // Ensure scrolling is re-enabled
   };
 
   useEffect(() => {
