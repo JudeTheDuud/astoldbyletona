@@ -7,7 +7,7 @@
 
 .wrapper {
   width: 80%;
-  background-color: #909486;
+  background-color: black;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -19,10 +19,12 @@
 }
 
 .sectionA{
-    
+   background-color: black;
    display: flex;
    flex-direction: column;
-   
+   padding: 1rem;
+   padding-inline: 3rem;
+   border-radius: .5rem;
 }
 .sectionA h3 {
   color: white;
@@ -55,7 +57,7 @@
 .form > button{
     height: 3rem;
     width: 65%;
-    background-color: #ebc1ab;
+    background-color: #e78b59;
     justify-self: end;
     grid-column: 2/3;
     border-radius: inherit;
@@ -66,7 +68,7 @@
 
 .form button:hover{
     background-color: black;
-    color: #ebc1ab;
+    color: #e78b59;
 
 }
 
@@ -138,5 +140,9 @@
 
   .fullWidth{
     grid-column: 1;
+  }
+
+  .sectionA{
+    text-align: center;
   }
 }

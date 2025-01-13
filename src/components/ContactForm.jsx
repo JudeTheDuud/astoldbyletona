@@ -2,8 +2,22 @@ import React from "react";
 import { useFormik } from "formik";
 import * as Yup from "yup";
 import styles from "../styles/contactForm.module.css";
+import { motion } from "framer-motion";
 
 const ContactForm = () => {
+  const fadeInAnimatonVariants = {
+    initial: {
+      opacity: 0,
+      y: 100,
+    },
+    animate: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        delay: 0.2,
+      },
+    },
+  };
   
   const validationSchema = Yup.object({
     name: Yup.string()
@@ -55,7 +69,11 @@ const ContactForm = () => {
           <h3>Request a Quote</h3>
           <p>Entrust with high professionalism</p>
         </div>
-        <div className={styles.formWrap}>
+        <motion.div
+        variants={fadeInAnimatonVariants} 
+        initial = 'initial'
+        whileInView= 'animate'
+        className={styles.formWrap}>
           <form onSubmit={formik.handleSubmit} className={styles.form}>
             <div className={styles.formGroup}>
               <label htmlFor="name">Name</label>
@@ -170,7 +188,7 @@ const ContactForm = () => {
               Request a Quote
             </button>
           </form>
-        </div>
+        </motion.div>
       </div>
     </div>
   );

@@ -7,7 +7,7 @@ body::-webkit-scrollbar {
   justify-content: center;
   background-color: white;
   height: 4rem;
-  width: 100%;
+  width: 100vw;
   align-items: center;
   position: fixed;
   top: 0;
@@ -15,6 +15,7 @@ body::-webkit-scrollbar {
   border-radius: 1rem;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
+  overflow-x: hidden;
 }
 
 .navContent {
