@@ -164,6 +164,10 @@ cursor: pointer;
     text-align: center;
   }
 
+  .navlinks li{
+    width: 100%;
+  }
+
   .navlinks li a {
     top: 0;
     font-size: 3rem;

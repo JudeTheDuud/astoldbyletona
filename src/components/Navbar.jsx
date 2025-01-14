@@ -8,7 +8,7 @@ import Logo from "../assets/pngs/Icon Black.png";
 const Navbar = () => {
   const navRef = useRef();
   const [isNavOpen, setIsNavOpen] = useState(false);
-  const navWrap = document.getElementById(styles.navWrapper)
+  const navWrap = document.getElementById('nav')
 
   const showNavbar = () => {
     setIsNavOpen(!isNavOpen);
@@ -49,6 +49,7 @@ const Navbar = () => {
             <img src={Logo} alt="" />
           </Link>
           <nav
+          id="nav"
             ref={navRef}
             className={`${styles.navWrapper} ${isNavOpen ? styles.responsive : ""}`}
           >
