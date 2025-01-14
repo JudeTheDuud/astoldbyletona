@@ -99,8 +99,10 @@ cursor: pointer;
 }
 
 .navBtn {
-  display: block;
+  display: flex;
   background-color: transparent;
+  align-items: center;
+  justify-content: center;
   border: none;
   padding: 1rem;
   color: black;
@@ -183,7 +185,7 @@ cursor: pointer;
 
 @media (max-width: 768px){
   .navBtn{
-    font-size: 1.1rem;
+    font-size: 1.5rem;
     padding: 0;
     width: 40px;
     height: 40px;

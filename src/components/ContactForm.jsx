@@ -5,6 +5,7 @@ import styles from "../styles/contactForm.module.css";
 import { motion } from "framer-motion";
 
 const ContactForm = () => {
+  
   const fadeInAnimatonVariants = {
     initial: {
       opacity: 0,
@@ -18,7 +19,7 @@ const ContactForm = () => {
       },
     },
   };
-  
+
   const validationSchema = Yup.object({
     name: Yup.string()
       .required("Name is required")
