@@ -72,6 +72,10 @@
 
 }
 
+.form button:disabled{
+  opacity: 0.5;
+}
+
 
 .formGroup{
     width: 100%;
@@ -116,6 +120,8 @@
   .error.visible {
     visibility: visible; 
   }
+
+
   
 
 
