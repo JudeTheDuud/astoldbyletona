@@ -4,11 +4,7 @@ import styles from "../styles/scroll.module.css";
 
 import cart from '../assets/pngs/hermon.jpg';
 import mobile from '../assets/pngs/catalyst.jpg';
-import textile from '../assets/pngs/jet.jpg';
 import packaging from '../assets/pngs/care.jpg';
-import lemod from '../assets/pngs/lemod.jpg';
-import biri from '../assets/pngs/biri.jpg';
-import cafe from '../assets/pngs/CafeNextDoorRaw.jpg';
 import jj from '../assets/pngs/jaatja.png'
 import mbo from '../assets/pngs/mbo.png'
 
